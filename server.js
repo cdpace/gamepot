@@ -1,24 +1,20 @@
-var hapi = require("hapi");
-var io = require("socket.io");
-
-var server = new hapi.Server();
+var app = require("express")();
+var http = require("http").Server(app);
+var io = require("socket.io")(http);
 
 //set connection details
 var connectionConfig = {
   port: 8088  
 };
 
-server.connection(connectionConfig);
 
 
 
 
-//Start Server
-server.start(function(err){
-   if(err)
-   {
-       throw err;
-   } 
-   
-   console.log("server started and running on %s",server.info.uri);
+
+
+
+//Start server
+http.listen(connectionConfig.port,function(){
+   console.log("Server started on: http://localhost:$s",connectionConfig.port); 
 });
