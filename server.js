@@ -8,7 +8,8 @@ var connectionConfig = {
 };
 
 
-
+var rh = require("./modules/routeHandler.js")("Hello 1");
+rh.test();
 
 
 
@@ -16,5 +17,5 @@ var connectionConfig = {
 
 //Start server
 http.listen(connectionConfig.port,function(){
-   console.log("Server started on: http://localhost:$s",connectionConfig.port); 
+   console.log("Server started on: http://localhost:%s",connectionConfig.port); 
 });
