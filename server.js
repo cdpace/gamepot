@@ -10,7 +10,6 @@ var connectionConfig = {
     port: 8088
 };
 
-
 rh.initRoutes();
 
 //Start server
