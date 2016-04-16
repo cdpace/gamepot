@@ -1,20 +1,13 @@
 var routeHandler = function (args) {
     ValidateArgs();
 
-    var _pagesDir = "./templates/";
     var app = args.app;
     var fs = args.fs;
 
     this.initRoutes = function () {
         //Set Routes for the application
-        app.get("/", function (reqeust, response) {
-            fs.readFile(_pagesDir + "index.html", function (err, data) {
-                SendPage(response, data);
-            });
-        });
-
-        app.get("/test", function (request, response) {
-            response.render("index", { title: "hay", message: "Hello There" });
+        app.get("/",function(req,res){
+           res.render("home"); 
         });
     };
 

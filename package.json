@@ -5,6 +5,7 @@
   "dependencies": {
     "express": "^4.13.4",
     "inert": "^3.2.0",
+    "ntepace": "0.0.8",
     "socket.io": "^1.4.5"
   }
 }
