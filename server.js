@@ -24,7 +24,7 @@ sass.render({
             console.log("style.css created");
         }
     });
-})
+});
 
 
 //Register Middleware  

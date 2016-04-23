@@ -2,9 +2,33 @@
     <head>
         <title>@[title]</title>
         <link rel="stylesheet" href="/style.css">
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#sw').html($(window).width());
+                $(document).change(function(){
+                    $('#sw').html($(window).width());
+                });
+            });
+            
+        </script>
         <script>@[script]</script>
     </head>
     <body>
-        @[body]
+        <section id="header">
+            <div class="logo">
+                
+            </div>
+            <div class="menu">
+                
+            </div>
+        </section>
+        <section id="body">
+            <h2>Screen Width : <span id="sw"></span></h2>
+        @[body]    
+        </section>
+        <section id="footer">
+            
+        </section>
     </body>
 </html>
