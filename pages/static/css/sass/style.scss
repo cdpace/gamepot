@@ -6,9 +6,12 @@ $fifthColor:#EB6E44;
 
 $logoscew: -20deg;
 
+
+
 body{
     background: $fourthColor;
     margin: 0px;
+    font-family: Montserrat;
 }
 
 #header{
@@ -38,8 +41,6 @@ body{
     
 }
 
-
-
 //Mobile Styles
 @media screen and (max-width: 980px) {    
   #header .logo{
@@ -53,7 +54,7 @@ body{
        top:0px;
        left:0px;
        width: 100%;
-       background-color: gray;   
+       background-color: $secondaryColor;   
    }
    
    #body{

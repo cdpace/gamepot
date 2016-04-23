@@ -1,6 +1,7 @@
 body {
   background: #FFF5C3;
-  margin: 0px; }
+  margin: 0px;
+  font-family: Montserrat; }
 
 #header {
   position: relative;
@@ -37,7 +38,7 @@ body {
     top: 0px;
     left: 0px;
     width: 100%;
-    background-color: gray; }
+    background-color: #8DCDC1; }
   #body {
     position: relative;
     top: 130px; } }
