@@ -6,7 +6,7 @@
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
     "inert": "^3.2.0",
-    "ntepace": "0.0.28",
+    "ntepace": "0.0.30",
     "socket.io": "^1.4.5"
   }
 }
