@@ -1,9 +1,9 @@
 //Modules
+var bodyParser = require("body-parser");
 var app = require("express")();
 var http = require("http").Server(app);
 var io = require("socket.io")(http);
 var fs = require("fs");
-//var rh = require("./modules/routeHandler.js")(app, fs);
 
 var controllers = {};
 
@@ -29,6 +29,15 @@ controllers.HOME = {
     POST: {
         INDEX: function (args) {
             console.log("accessed post home/index action");
+        },
+        TEST: function(args){
+            console.log("accessed from post action");
+            return {
+                viewName: "test",
+                args: {
+                    name : args[0].name
+                }
+            };
         }
     }
 };
@@ -37,24 +46,23 @@ controllers.HOME = {
 var ntepace = require("ntepace")(fs, app, {
     template: "./pages/layout/_layout.html",
     viewDir: "./pages/views/",
-    handleRoutes: true,
-    setRouteHandlerManually: true,
     controllers: controllers
 });
 
-app.use(function(req,res,next){
-   console.log("custom middleware ");
-   next(); 
+app.use(function (req, res, next) {
+    console.log("custom middleware ");
+    next();
 });
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(ntepace.routeHandler);
 
 //set configurations
 var connectionConfig = {
     port: 8088
 };
-
-//rh.initRoutes();
 
 //Start server
 http.listen(connectionConfig.port, function () {
