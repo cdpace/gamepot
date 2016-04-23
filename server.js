@@ -5,6 +5,8 @@ var express = require("express");
 var app = express();
 var http = require("http").Server(app);
 var fs = require("fs");
+var sass = require("node-sass");
+
 //Custom Modules
 var controllers = require("./modules/controllers");
 var ntepace = require("ntepace")(fs, app, {
@@ -13,11 +15,19 @@ var ntepace = require("ntepace")(fs, app, {
     controllers: controllers
 });
 
-//Register Middleware
-app.use(function (req, res, next) {
-    console.log("custom middleware ");
-    next();
-});
+//Render SASS css files
+sass.render({
+    file: "./pages/static/css/sass/style.scss"       
+},function(err,result){
+    fs.writeFile("./pages/static/css/style.css",result.css,function(err){
+        if(!err){
+            console.log("style.css created");
+        }
+    });
+})
+
+
+//Register Middleware  
 app.use(express.static("./pages/static/images/"));
 app.use(express.static("./pages/static/css/"));
 app.use(express.static("./pages/static/js/"));
