@@ -1,11 +1,20 @@
+#swc {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: yellow;
+  padding: 0px;
+  z-index: 3000;
+  font-size: small;
+  display: none; }
+
 body {
-  background-color: #7C786A;
+  background-color: #D3E397;
   margin: 0px;
   font-family: Montserrat; }
 
 #header {
   position: relative;
-  border: solid 1px #EB6E44;
   width: 99.9%;
   height: 300px; }
 
@@ -14,8 +23,10 @@ body {
   top: 10%;
   left: 3%;
   width: 400px;
-  height: 200px;
-  border: solid 1px #D3E397; }
+  height: 200px; }
+
+#header .logo img {
+  width: 83%; }
 
 #header .menu {
   position: relative;
@@ -23,14 +34,47 @@ body {
   top: -42%;
   width: 66%;
   height: 100px;
-  border: solid 1px #8DCDC1; }
+  background: #8DCDC1;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 10px 11px 5px -7px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 10px 11px 5px -7px rgba(0, 0, 0, 0.54);
+  box-shadow: 10px 11px 5px -7px rgba(0, 0, 0, 0.54); }
+
+#body {
+  padding-left: 10px;
+  border: solid 1px #D3E397;
+  height: 100%; }
+
+#footer {
+  background-color: #7C786A;
+  height: 400px; }
 
 @media screen and (max-width: 1377px) {
   #header .menu {
-    left: 33%;
-    width: 66%; } }
-
-@media screen and (max-width: 1216px) {
-  #header .menu {
-    left: 33%;
+    left: 40%;
     width: 50%; } }
+
+@media screen and (max-width: 1096px) {
+  #header .menu {
+    left: 45%;
+    width: 50%; } }
+
+@media screen and (max-width: 715px) {
+  #header {
+    height: 98px; }
+  #header .logo {
+    top: 0%;
+    left: 0%;
+    width: 47%;
+    height: 98px; }
+  #header .menu {
+    top: 12%;
+    left: 0%;
+    width: 100%;
+    height: 20px;
+    border-radius: 5px 5px 5px 5px; }
+  #header .menu:hover {
+    background: #8DCDC1;
+    height: 200px; }
+  #body {
+    padding-top: 50px; } }
