@@ -1,1 +1,28 @@
+https://coolors.co/app/000501-73ab84-99d19c-79c7c5-ade1e5
+$primaryColor: #000501;
+$secondaryColor: #73AB84;
+$thirdColor: #99D19C;
+$fourthColor:#79C7C5;
+$fifthColor:#ADE1E5;
+
+
 http://www.colorcombos.com/combotester.html?color0=7C786A&color1=8DCDC1&color2=D3E397&color3=FFF5C3&color4=EB6E44&show_text=Y
+$primaryColor: #7C786A;
+$secondaryColor: #8DCDC1;
+$thirdColor: #D3E397;
+$fourthColor:#FFF5C3;
+$fifthColor:#EB6E44;
+
+
+
+
+
+
+
+https://coolors.co/app/000501-5a5a66-a4c2a8-aceb98-87ff65
+
+$primaryColor: #000501;
+$secondaryColor: #3e78b2;
+$thirdColor: #004Ba8;
+$fourthColor:#4A525A;
+$fifthColor:#87ff65;

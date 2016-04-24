@@ -4,61 +4,54 @@ $thirdColor: #D3E397;
 $fourthColor:#FFF5C3;
 $fifthColor:#EB6E44;
 
-$logoscew: -20deg;
-
-
+$mainFont : Montserrat;
 
 body{
-    background: $fourthColor;
-    margin: 0px;
-    font-family: Montserrat;
+    background-color: $primaryColor;
+    margin:0px;
+    font-family: $mainFont;
 }
 
 #header{
     position: relative;
-    height: 150px;
-    background-color: $secondaryColor;
+    border: solid 1px $fifthColor;
+    width: 99.9%;
+    height: 300px;
 }
 
 #header .logo{
     position: relative;
-    left:-10%;
-    width: 40%;
-    background-color: $thirdColor;
-    height: 100%;
-    -ms-transform: skewX($logoscew); 
-    -webkit-transform: skewX($logoscew); 
-    transform: skewX($logoscew); 
+    top:10%;
+    left:3%;
+    width:400px;
+    height: 200px;
+    border: solid 1px $thirdColor;
 }
 
 #header .menu{
     position: relative;
-    top: -150px;
-    left: 32%;
-    
-    width: 68%;
-    height: 100%;
-    
+    left:32%;
+    top:-42%;
+    width: 66%;
+    height: 100px;
+    border: solid 1px $secondaryColor;
 }
 
-//Mobile Styles
-@media screen and (max-width: 980px) {    
-  #header .logo{
-      width:110%;
-      -ms-transform: skewX(0deg); /* IE 9 */
-      -webkit-transform: skewX(0deg); /* Safari */
-      transform: skewX(0deg); /* Standard syntax */
-  }
-  
+@media screen and (max-width: 1377px) {
    #header .menu{
-       top:0px;
-       left:0px;
-       width: 100%;
-       background-color: $secondaryColor;   
-   }
-   
-   #body{
-       position: relative;
-       top:130px;
-   }
+       left:33%;
+        width: 66%;
+    }    
+}
+
+@media screen and (max-width: 1216px) {
+   #header .menu{
+       left:33%;
+        width: 50%;
+    }    
+}
+
+
+@media screen and (max-width: 980px) {
+       
 }
