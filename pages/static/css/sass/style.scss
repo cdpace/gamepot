@@ -1,10 +1,13 @@
 $primaryColor: #7C786A;
 $secondaryColor: #8DCDC1;
+$secondaryColorLight: #ABCCC5;
 $thirdColor: #D3E397;
 $fourthColor:#FFF5C3;
 $fifthColor:#EB6E44;
 
-$mainFont : Montserrat;
+
+$mainFont : Montserrat,calibri;
+$controlBoxItemsSize: 10px;
 
 //Only for testing purposes
 #swc{
@@ -32,6 +35,24 @@ body{
     height: 300px;
 }
 
+#header .controlBox{
+    position: relative;
+    left: 70%;
+    width: 30%;
+    height: 40px;    
+}
+
+#header .controlBox .controlboxItem{
+    display: inline-block;
+    font-size: $controlBoxItemsSize;
+    color: $primaryColor;
+    font-weight: bold;
+    cursor: pointer;
+    float:right;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
 #header .logo{
     position: relative;
     top:10%;
@@ -57,9 +78,55 @@ body{
     box-shadow: 10px 11px 5px -7px rgba(0,0,0,0.54);
 }
 
+#header .menu .menuItem{
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    cursor: pointer;
+    color: $fifthColor;
+    font-size: 18px;
+   border-right: inset 2px $primaryColor;
+}
+
+#header .menu .menuItem:last-child{
+    border-right: none;
+}
+
+#header .searchBar{
+    position: relative;
+    top: -293px;
+    left: 68%;
+    width: 32%;
+}
+
+#header .searchBar img{
+    width: 19px;
+    padding-top: 1px;
+    position: relative;
+    left:6%;
+    opacity: 0.5;
+}
+
+#header .searchBar input{
+    width:80%;
+    border-radius: 5px;
+    padding-left:33px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    color: $secondaryColor;
+    font-weight: bold;
+    -webkit-box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.54);
+    -moz-box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.54);
+    box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.54);
+    border: solid 2px $secondaryColor;
+}
+
 #body{
     padding-left: 10px;
-    border:solid 1px #D3E397;
     height: 100%;
 }
 

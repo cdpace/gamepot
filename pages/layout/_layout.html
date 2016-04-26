@@ -3,7 +3,7 @@
         <title>@[title]</title>
         <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Montserrat">
-        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="./css/style.css">
         <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
         <script type="text/javascript">
             $(document).ready(function(){
@@ -14,24 +14,43 @@
             });
             
         </script>
-        <script>@[script]</script>
+        @[script]
     </head>
     <body>
         <div id="swc"><h2>Screen Width : <span id="sw"></span></h2></div>
         <section id="header">
+            <section class="controlBox">
+                <div class="controlboxItem">Login/Register</div>
+                <div class="controlboxItem">My Account</div>
+                <div class="controlboxItem">
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <div class="addthis_sharing_toolbox"></div>
+                </div>
+            </section>
             <section class="logo">
-                <img src="./logo.svg" alt="Gamespot" >
+                <img src="./images/logo.svg" alt="Gamespot" >
             </section>
             <section class="menu">
-                
+                <div class="menuItem">Categories</div>
+                <div class="menuItem">New Releases</div>
+                <div class="menuItem">Menu Item 1</div>
+                <div class="menuItem">Menu Item 1</div>
+                <div class="menuItem">Menu Item 1</div>
+                <div class="menuItem">Menu Item 1</div>
+            </section>
+            <section class="searchBar">
+                <span><img src="./images/SearchIcon.png" alt="seracg" align="center"></span>
+                <input type="text" id="searchBarInput" placeholder="Search..." />
             </section>
         </section>
         <section id="body">
-            
         @[body]    
         </section>
         <section id="footer">
             
         </section>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-571fa979d61d94fc"></script>
+
     </body>
 </html>

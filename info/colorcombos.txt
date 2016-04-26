@@ -26,3 +26,13 @@ $secondaryColor: #3e78b2;
 $thirdColor: #004Ba8;
 $fourthColor:#4A525A;
 $fifthColor:#87ff65;
+
+
+--backup
+
+$primaryColor: #7C786A;
+$secondaryColor: #8DCDC1;
+$secondaryColorLight: #ABCCC5;
+$thirdColor: #D3E397;
+$fourthColor:#FFF5C3;
+$fifthColor:#EB6E44;

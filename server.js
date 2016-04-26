@@ -28,9 +28,7 @@ sass.render({
 
 
 //Register Middleware  
-app.use(express.static("./pages/static/images/"));
-app.use(express.static("./pages/static/css/"));
-app.use(express.static("./pages/static/js/"));
+app.use(express.static("./pages/static/"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.urlencoded({ extended: true }));
