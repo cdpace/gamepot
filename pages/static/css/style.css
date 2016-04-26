@@ -9,7 +9,7 @@
   display: none; }
 
 body {
-  background-color: #D3E397;
+  background-color: #FFFFFF;
   margin: 0px;
   font-family: Montserrat, calibri; }
 
@@ -26,8 +26,8 @@ body {
 
 #header .controlBox .controlboxItem {
   display: inline-block;
-  font-size: 10px;
-  color: #7C786A;
+  font-size: 14px;
+  color: #E18A07;
   font-weight: bold;
   cursor: pointer;
   float: right;
@@ -42,7 +42,7 @@ body {
   height: 200px; }
 
 #header .logo img {
-  width: 83%; }
+  width: 100%; }
 
 #header .menu {
   position: relative;
@@ -50,7 +50,7 @@ body {
   top: -42%;
   width: 66%;
   height: 100px;
-  background: #8DCDC1;
+  background: #E18A07;
   border-radius: 10px 10px 10px 10px;
   -webkit-box-shadow: 10px 11px 5px -7px rgba(0, 0, 0, 0.54);
   -moz-box-shadow: 10px 11px 5px -7px rgba(0, 0, 0, 0.54);
@@ -63,9 +63,9 @@ body {
   top: 30px;
   left: 20px;
   cursor: pointer;
-  color: #EB6E44;
+  color: #FFFFFF;
   font-size: 18px;
-  border-right: inset 2px #7C786A; }
+  border-right: inset 2px #FFFFFF; }
 
 #header .menu .menuItem:last-child {
   border-right: none; }
@@ -91,19 +91,19 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
   border: none;
-  color: #8DCDC1;
+  color: #E18A07;
   font-weight: bold;
   -webkit-box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.54);
   -moz-box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.54);
   box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.54);
-  border: solid 2px #8DCDC1; }
+  border: solid 2px #E18A07; }
 
 #body {
   padding-left: 10px;
   height: 100%; }
 
 #footer {
-  background-color: #7C786A;
+  background-color: #C0C0C0;
   height: 400px; }
 
 @media screen and (max-width: 1377px) {
@@ -131,7 +131,7 @@ body {
     height: 20px;
     border-radius: 5px 5px 5px 5px; }
   #header .menu:hover {
-    background: #8DCDC1;
+    background: #E18A07;
     height: 200px; }
   #body {
     padding-top: 50px; } }
