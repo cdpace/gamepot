@@ -6,6 +6,10 @@ var app = express();
 var http = require("http").Server(app);
 var fs = require("fs");
 var sass = require("node-sass");
+var dr = require("ndrpace")();
+
+//IOC Registration
+dr.register({ name: "fs", item: fs});
 
 //Custom Modules
 var controllers = require("./modules/controllers");
